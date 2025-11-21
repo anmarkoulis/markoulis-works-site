@@ -1,0 +1,15 @@
+name: Trigger deploy workflow on tag push
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  call-deploy:
+    name: Call deploy reusable workflow
+    uses: ./.github/workflows/deploy.yml
+    with:
+      path: '.'
+
+# This workflow listens for pushed tags (v*) and calls the reusable `deploy.yml` workflow.
