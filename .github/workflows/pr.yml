@@ -1,0 +1,12 @@
+name: PR — Serve & Smoke Test
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  call-test:
+    uses: ./.github/workflows/test.yml
+    with:
+      path: '.'
