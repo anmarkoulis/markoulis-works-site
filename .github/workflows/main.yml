@@ -11,8 +11,3 @@ jobs:
     uses: Orfium/orfium-github-actions/.github/workflows/bump.yml@master
     secrets:
       RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  deploy:
-    name: Call deploy reusable workflow
-    needs: bump
-    uses: ./.github/workflows/deploy.yml
