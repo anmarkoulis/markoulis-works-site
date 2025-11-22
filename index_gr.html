@@ -7,49 +7,50 @@
     <link rel="alternate" hreflang="en" href="index.html">
     <title>Markoulis Works — Ελληνικά</title>
         <script>
-            if (location.protocol !== 'https:') {
-                location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
-            }
-        </script>
+    if (
+        location.protocol !== 'https:' &&
+        location.hostname !== 'localhost' &&
+        location.hostname !== '127.0.0.1'
+    ) {
+        location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
+    }
+</script>
 </head>
 <body>
     <header>
-        <h1>Markoulis Works</h1>
-        <nav aria-label="Επιλογή γλώσσας">
-            <a href="index.html">EN</a> | <a href="index_gr.html">ΕΛ</a>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1 class="site-title">Markoulis Works</h1>
+                <nav class="main-nav">
+                    <a href="index_gr.html" class="active">Αρχική</a>
+                    <a href="about.html">Ποιοι Είμαστε</a>
+                    <a href="services.html">Τι Κάνουμε</a>
+                    <a href="contact.html">Επικοινωνία</a>
+                </nav>
+            </div>
+            <div class="navbar-right">
+                <div class="lang-picker">
+                    <a href="index.html" title="English"><img src="assets/flags/en.png" alt="EN" class="flag-icon"></a>
+                    <a href="index_gr.html" title="Ελληνικά"><img src="assets/flags/gr.png" alt="GR" class="flag-icon"></a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Πληροφορίες Εταιρείας</h2>
-            <p>Νομική Ονομασία: Markoulis Works IKE</p>
-            <p>Καταχωρημένη Διεύθυνση: [Η Διεύθυνσή σας]</p>
-            <p>Αριθμός Γ.Ε.ΜΗ: [Ο Αριθμός Γ.Ε.ΜΗ σας]</p>
-            <p>Αριθμός Φ.Π.Α (ΑΦΜ): [Ο Αριθμός Φ.Π.Α σας]</p>
-            <p>Στοιχεία Επικοινωνίας: [Τα Στοιχεία Επικοινωνίας σας]</p>
+        <section class="hero">
+            <h2>Ενδυναμώνοντας τον Ψηφιακό Μετασχηματισμό σας</h2>
+            <p>Η Markoulis Works εξειδικεύεται στην παραγωγή λογισμικού, τη συμβουλευτική πληροφορικής και τη δημιουργία περιεχομένου για επιχειρήσεις. Βοηθάμε τους οργανισμούς να αξιοποιήσουν την τεχνολογία για να πετύχουν τους στόχους τους, να βελτιστοποιήσουν τις λειτουργίες τους και να επικοινωνούν αποτελεσματικά.</p>
         </section>
-        <section>
-            <h2>Εταίροι</h2>
-            <p>Πλήρη Ονόματα και Διευθύνσεις Εταίρων:</p>
+        <section class="services-overview">
+            <h3>Υπηρεσίες</h3>
             <ul>
-                <li>[Όνομα Εταίρου 1, Διεύθυνση]</li>
-                <li>[Όνομα Εταίρου 2, Διεύθυνση]</li>
-                <!-- Προσθέστε περισσότερους εταίρους αν χρειάζεται -->
-            </ul>
-            <p>Τύπος/Κατηγορία Συμμετοχής:</p>
-            <ul>
-                <li>[Όνομα Εταίρου 1: Τύπος Συμμετοχής]</li>
-                <li>[Όνομα Εταίρου 2: Τύπος Συμμετοχής]</li>
-                <!-- Προσθέστε περισσότερες συμμετοχές αν χρειάζεται -->
+                <li><strong>Παραγωγή Λογισμικού:</strong> Εξατομικευμένες λύσεις λογισμικού για τις ανάγκες της επιχείρησής σας.</li>
+                <li><strong>Συμβουλευτική Πληροφορικής:</strong> Εξειδικευμένες συμβουλές και υποστήριξη για τη βέλτιστη αξιοποίηση της τεχνολογίας.</li>
+                <li><strong>Δημιουργία Περιεχομένου:</strong> Επαγγελματική συγγραφή blog και ψηφιακών κειμένων.</li>
             </ul>
         </section>
-        <section>
-            <h2>Διοίκηση</h2>
-            <p>Διαχειριστής/Διευθυντής: [Όνομα Διαχειριστή]</p>
-        </section>
-        <section>
-            <h2>Οικονομικές Καταστάσεις</h2>
-            <p>Οι ετήσιες οικονομικές καταστάσεις θα δημοσιεύονται εδώ όταν είναι απαραίτητο.</p>
+        <section class="more-info">
+            <a href="about.html" class="info-link">Μάθετε περισσότερα για εμάς &rarr;</a>
         </section>
     </main>
     <footer>

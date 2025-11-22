@@ -7,49 +7,50 @@
     <link rel="alternate" hreflang="el" href="index_gr.html">
     <title>Markoulis Works</title>
         <script>
-            if (location.protocol !== 'https:') {
-                location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
-            }
-        </script>
+    if (
+        location.protocol !== 'https:' &&
+        location.hostname !== 'localhost' &&
+        location.hostname !== '127.0.0.1'
+    ) {
+        location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
+    }
+</script>
 </head>
 <body>
     <header>
-        <h1>Markoulis Works</h1>
-        <nav aria-label="Language switcher">
-            <a href="index.html">EN</a> | <a href="index_gr.html">ΕΛ</a>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1 class="site-title">Markoulis Works</h1>
+                <nav class="main-nav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">Who We Are</a>
+                    <a href="services.html">What We Do</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="navbar-right">
+                <div class="lang-picker">
+                    <a href="index.html" title="English"><img src="assets/flags/en.png" alt="EN" class="flag-icon"></a>
+                    <a href="index_gr.html" title="Ελληνικά"><img src="assets/flags/gr.png" alt="GR" class="flag-icon"></a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Company Information</h2>
-            <p>Legal Name: Markoulis Works IKE</p>
-            <p>Registered Address: [Your Address]</p>
-            <p>G.E.MI Number: [Your G.E.MI Number]</p>
-            <p>VAT Number (AFM): [Your VAT Number]</p>
-            <p>Contact Details: [Your Contact Details]</p>
+        <section class="hero">
+            <h2>Empowering Your Digital Transformation</h2>
+            <p>Markoulis Works specializes in software production, IT consulting, and content creation for businesses. We help organizations leverage technology to achieve their goals, streamline operations, and communicate effectively.</p>
         </section>
-        <section>
-            <h2>Partners</h2>
-            <p>Full Names and Addresses of Partners:</p>
+        <section class="services-overview">
+            <h3>Our Services</h3>
             <ul>
-                <li>[Partner Name 1, Address]</li>
-                <li>[Partner Name 2, Address]</li>
-                <!-- Add more partners as needed -->
-            </ul>
-            <p>Type/Category of Contribution:</p>
-            <ul>
-                <li>[Partner Name 1: Contribution Type]</li>
-                <li>[Partner Name 2: Contribution Type]</li>
-                <!-- Add more contributions as needed -->
+                <li><strong>Software Production:</strong> Custom software solutions tailored to your business needs.</li>
+                <li><strong>IT Consulting:</strong> Expert advice and support to optimize your technology strategy.</li>
+                <li><strong>Content Creation:</strong> Professional blog writing and digital content services.</li>
             </ul>
         </section>
-        <section>
-            <h2>Management</h2>
-            <p>Administrator/Manager: [Manager Name]</p>
-        </section>
-        <section>
-            <h2>Financial Statements</h2>
-            <p>Annual financial statements will be published here when applicable.</p>
+        <section class="more-info">
+            <a href="about.html" class="info-link">Learn more about us &rarr;</a>
         </section>
     </main>
     <footer>
