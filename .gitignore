@@ -11,6 +11,11 @@ dist/
 build/
 public/
 
+# Jekyll build and cache
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
 # Local env files
 .env
 .env.*
