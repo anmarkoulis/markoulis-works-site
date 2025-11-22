@@ -21,34 +21,5 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Start simple HTTP server
-        run: |
-          DIR="${{ inputs.path || github.event.inputs.path || '.' }}"
-          echo "Serving directory: $DIR"
-          python -m http.server 8000 --bind 127.0.0.1 --directory "$DIR" >server.log 2>&1 & echo $! >server.pid
-          sleep 1
-
-      - name: Smoke-test important pages with curl
-        run: |
-          set -e
-          # basic availability checks
-          curl -sfI http://127.0.0.1:8000/index.html
-          curl -sfI http://127.0.0.1:8000/index_gr.html
-          curl -sfI http://127.0.0.1:8000/privacy.html
-          # content check
-          curl -fsS http://127.0.0.1:8000/index.html | grep -q "Markoulis Works"
-
-      - name: Stop server
-        if: always()
-        run: |
-          if [ -f server.pid ]; then
-            kill $(cat server.pid) || true
-            rm server.pid
-          else
-            pkill -f "python -m http.server" || true
-          fi
+      - name: Run Makefile smoke tests
+        run: make test

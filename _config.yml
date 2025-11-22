@@ -1,0 +1,13 @@
+title: Markoulis Works
+baseurl: ""
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name.html
