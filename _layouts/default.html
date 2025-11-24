@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <title>{{ page.title | default: site.title }}</title>
 </head>
@@ -15,7 +18,11 @@
   <main>
     {{ content }}
   </main>
-  {% include footer.html %}
+  {% if page.lang == 'el' %}
+    {% include footer_gr.html %}
+  {% else %}
+    {% include footer_en.html %}
+  {% endif %}
   <script src="{{ site.baseurl }}/cookie-consent.js" defer></script>
 </body>
 </html>
