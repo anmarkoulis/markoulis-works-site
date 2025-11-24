@@ -5,6 +5,7 @@ permalink: /company-info.html
 lang: en
 ---
 <section>
+  <p>Statute: <a href="/assets/statuteDoc.pdf" target="_blank">View the company statute (PDF)</a></p>
   <h2>Company Information</h2>
   <p>Legal Name: MARKOULIS WORKS SINGLE MEMBER P.C.</p>
   <p>Trade Name: MARKOULIS WORKS</p>

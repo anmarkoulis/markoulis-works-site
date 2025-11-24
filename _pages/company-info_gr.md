@@ -5,6 +5,7 @@ permalink: /company-info_gr.html
 lang: el
 ---
 <section>
+  <p>Καταστατικό: <a href="/assets/statuteDoc.pdf" target="_blank">Δείτε το καταστατικό της εταιρείας (PDF)</a></p>
   <h2>Πληροφορίες Εταιρείας</h2>
   <p>Επωνυμία: MARKOULIS WORKS ΜΟΝΟΠΡΟΣΩΠΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ</p>
   <p>Διακριτικός τίτλος: MARKOULIS WORKS</p>
