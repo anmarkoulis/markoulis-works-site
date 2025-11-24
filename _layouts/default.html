@@ -8,12 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <title>{{ page.title | default: site.title }}</title>
-  <script>
-    // Redirect HTTP to HTTPS (except localhost)
-    if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-      location.replace('https:' + window.location.href.substring(window.location.protocol.length));
-    }
-  </script>
 </head>
 <body>
   {% if page.lang == 'el' %}
