@@ -6,5 +6,7 @@ lang: en
 ---
 <section>
   <h2>Financial Statements</h2>
-  <p>Annual financial statements will be published here when applicable.</p>
+  <h3>2025</h3>
+  <p><a href="/assets/ekthesi_diaxeirisis_2025.pdf" target="_blank">Management Report 2025 (PDF)</a></p>
+  <p><a href="/assets/oik_katastaseis_2025.pdf" target="_blank">Financial Statements 2025 (PDF)</a></p>
 </section>
