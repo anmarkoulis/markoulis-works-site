@@ -8,6 +8,6 @@ on:
 jobs:
   bump:
     name: Bump version (semantic-release)
-    uses: Orfium/orfium-github-actions/.github/workflows/bump.yml@master
+    uses: ./.github/workflows/bump.yml
     secrets:
       RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
