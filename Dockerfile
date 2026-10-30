@@ -1,7 +1,8 @@
 FROM jekyll/jekyll:latest
 
 # Install the github-pages gem to emulate GitHub Pages locally
-RUN gem install github-pages
+# --force: the base image ships sass-embedded, whose `sass` executable otherwise blocks the install
+RUN gem install github-pages --force
 
 # Set working directory
 WORKDIR /srv/jekyll
