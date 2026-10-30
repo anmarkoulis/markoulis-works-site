@@ -4,6 +4,9 @@ title: Privacy Policy
 permalink: /privacy.html
 lang: en
 ---
+<div class="container page">
+  <div class="page-head"><h1>Privacy policy</h1></div>
+  <div class="prose">
 <section>
   <h2>Overview</h2>
   <p>This is a placeholder privacy policy. Replace the bracketed placeholders with your real details and adapt the text after consulting a legal advisor.</p>
@@ -28,3 +31,5 @@ lang: en
   <h3>Your rights</h3>
   <p>You have the right to access, correct, or delete your personal data. Contact us for requests.</p>
 </section>
+  </div>
+</div>
