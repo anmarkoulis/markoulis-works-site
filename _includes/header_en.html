@@ -1,15 +1,17 @@
-<header style="display: flex; justify-content: space-between; align-items: center; padding: 1em 2em;">
-  <div>
-    <a href="/en.html" style="text-decoration: none;">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Markoulis Works" style="height: 40px;">
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/en.html">
+      {% include logo_mark.html %}
+      <span>Markoulis Works</span>
     </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/company-info.html"{% if page.url == '/company-info.html' %} aria-current="page"{% endif %}>Company information</a>
+      <a href="/partners-management.html"{% if page.url == '/partners-management.html' %} aria-current="page"{% endif %}>Partners &amp; management</a>
+      <a href="/financial-statements.html"{% if page.url == '/financial-statements.html' %} aria-current="page"{% endif %}>Financial statements</a>
+      <div class="lang-switch">
+        <a href="/en.html" title="English" aria-current="true">EN</a>
+        <a href="/gr.html" title="Ελληνικά" lang="el">ΕΛ</a>
+      </div>
+    </nav>
   </div>
-  <nav aria-label="Main navigation" style="display: flex; gap: 2em; align-items: center;">
-    <a href="/company-info.html">Company Information</a>
-    <a href="/partners-management.html">Partners and Management</a>
-    <a href="/financial-statements.html">Financial Statements</a>
-    <span style="margin-left:2em;"></span>
-    <a href="/en.html" title="English">EN</a>
-    <a href="/gr.html" title="Ελληνικά">ΕΛ</a>
-  </nav>
 </header>
